@@ -499,8 +499,7 @@ header h2 {
 
 aside#sidebar {
   float: right;
-  width: 200px;
-  min-height: 504px;
+  width: 220px;
   padding-left: 20px;
   font-size: 12px;
   line-height: 1.3;
@@ -518,12 +517,11 @@ aside#sidebar p.repo-owner a {
 
 a.button {
   width: 134px;
-  height: 45px;
-  padding-top: 8px;
+  height: 40px;
   padding-left: 68px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
   font-size: 23px;
-  line-height: 1.2;
+  line-height: 2;
   color: #fff;
 }
 a.button small {
@@ -541,6 +539,7 @@ aside a.button {
   width: 158px;
   padding-left: 64px;
   font-size: 21px;
+  margin-bottom: 10px;
   background: transparent url(../images/download-button.png) 0 0 no-repeat;
 }
 
@@ -883,4 +882,7 @@ footer a:hover {
   font-style: normal;
   font-weight: 400;
   src: local('Architects Daughter'), local('ArchitectsDaughter'), url(https://fonts.gstatic.com/s/architectsdaughter/v6/RXTgOOQ9AAtaVOHxx0IUBOkI_DLF4EgbZt3mhU8gQFo.woff) format('woff');
+}
+a{
+	cursor:pointer
 }
