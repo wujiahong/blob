@@ -788,9 +788,6 @@ footer a:hover {
   header h2 {
     font-size: 30px;
   }
-  #main-content {
-    width: 490px;
-  }
   #main-content h1:before,
   #main-content h2:before,
   #main-content h3:before,

@@ -21,40 +21,32 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
   </head>
   <body>
-    <header>
-		  <div class="inner">
-			<h1>云淡风轻</h1>
-			<h2>wjh_plus@163.com</h2>
-			<!--<a href="https://github.com/wujiahong/blob" class="button"><small>View project on</small> GitHub</a>-->
-		  </div>
-    </header>
-    <div id="content-wrapper">
-      <div class="inner clearfix">
-      	<iframe  id="main-content" style="width:100%" scrolling="no" frameborder="0" src="content.html">
-      	
-      	
-      	</iframe>
-      
-		<!-- <iframe src="all.html" id="main-content" scrolling="no" frameborder="0"></iframe>
-		
+		<iframe src="all.html" id="main-content" scrolling="no" frameborder="0"></iframe>
 		
         <aside id="sidebar">
-		  <a class="button" onclick="load('all.html');">全部</a>
-          <a class="button" onclick="load('cloudcomputing/cloudcomputing-all.html');">云计算</a>
-          <a class="button" onclick="load('nodejs/nodejs-all.html');">Node.js</a>
-          <a class="button" onclick="load('linux/linux-all.html');">Linux</a>
-          <a class="button" onclick="load('j2ee/j2ee-all.html');">J2EE</a>
+        
+		  <a class="button" onclick="menu('all.html');">全部</a>
+          <a class="button" onclick="menu('cloudcomputing/cloudcomputing-all.html');">云计算</a>
+          <a class="button" onclick="menu('nodejs/nodejs-all.html');">Node.js</a>
+          <a class="button" onclick="menu('linux/linux-all.html');">Linux</a>
+          <a class="button" onclick="menu('j2ee/j2ee-all.html');">J2EE</a>
 		  <a class="button" href="aboutme.html" target="_blank">About me</a>
+		  
           <p class="repo-owner">
           	<a href="https://github.com/wujiahong/blob"></a> is maintained by 
           	<a href="https://github.com/wujiahong">wujiahong</a>.
           </p>
-        </aside> -->
-      </div>
-    </div>
+        </aside>
   </body>
   <script type="text/javascript">
   function load(url){
+	  parent.load(url);
+  }
+  function fixHeight(){
+	  parent.document.getElementById("main-content").style.height=document.body.scrollHeight + "px";
+  }
+  
+  function menu(url){
 	  document.getElementById("main-content").src = url;
   }
   </script>
